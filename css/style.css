@@ -1,0 +1,76 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Trebuchet MS', Trebuchet, Arial, sans-serif;
+	
+}
+.main{
+	box-shadow: 4px 4px 68px rgba(0, 0, 0, 0.1);
+	margin: 50px 60px;
+	padding: 70px;
+}
+h1{
+	margin: 0 0 20px 0 ;
+}
+
+h1,
+h1 + p::first-letter{
+	font-size: 42px;
+	line-height:  42px;
+	padding: 15px;
+	color: #171717;
+	font-family: 'Playfair Display', serif;
+}
+
+
+h1 + p::first-letter{
+	font-size: 110px;
+	float: left;
+	margin-top: 11px;			
+
+}
+.article{
+	margin-bottom:30px;
+}
+.article p,
+.article q{
+	font-family: 'Lato', sans-serif;
+	color: #7A7A7A;
+}
+
+.article p{
+	font-size: 18px;
+	line-height:  34px;
+}
+
+.article q{
+ 	quotes: none; 
+ 	font-style: italic ;
+ 	font-size: 24px;
+ 	line-height: 34px;
+}
+.article q::before{
+	content: "“";
+	font-size: 60px;
+}
+input[type="button"]{
+	display: block;
+	border: 1px solid #eaa258;
+	background-color: #fff;
+	cursor: pointer;
+	font-size: 18px;
+	padding: 15px 40px;
+	color: #eaa258;
+	text-transform: uppercase;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	letter-spacing: 0.2em;	
+}
