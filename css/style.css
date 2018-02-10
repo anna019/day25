@@ -31,7 +31,7 @@ h1 + p::first-letter{
 }
 
 
-h1 + p::first-letter{
+p:first-of-type::first-letter{
 	font-size: 110px;
 	float: left;
 	margin-top: 11px;			
@@ -41,7 +41,7 @@ h1 + p::first-letter{
 	margin-bottom:30px;
 }
 .article p,
-.article q{
+.article blockquote{
 	font-family: 'Lato', sans-serif;
 	color: #7A7A7A;
 }
@@ -51,17 +51,17 @@ h1 + p::first-letter{
 	line-height:  34px;
 }
 
-.article q{
+.article blockquote{
  	quotes: none; 
  	font-style: italic ;
  	font-size: 24px;
  	line-height: 34px;
 }
-.article q::before{
+.article blockquote::before{
 	content: "“";
 	font-size: 60px;
 }
-input[type="button"]{
+.button{
 	display: block;
 	border: 1px solid #eaa258;
 	background-color: #fff;
@@ -73,4 +73,11 @@ input[type="button"]{
 	font-family: 'Lato', sans-serif;
 	font-weight: bold;
 	letter-spacing: 0.2em;	
+	transition: all .5s ; 
+}
+.button:focus,
+.button:hover,
+.button:active{
+	background-color: #eaa258;
+	color: #fff;
 }
